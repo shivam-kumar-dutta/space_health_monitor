@@ -1,0 +1,11 @@
+{
+    "austronout_name": "shivam",
+    "time_stamp": "21.10.2026T11:30:50z ",
+    "vitels":
+     {
+       "heart_rate" : 85,
+       "spo2": 98,
+       "temperature": 37.2
+    }
+    ,"sleep_hours" : 6.5
+}
