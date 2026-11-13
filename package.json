@@ -1,0 +1,13 @@
+{
+  "name": "astrovitals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hackathon prototype for astronaut health telemetry, validation, monitoring, and reports.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

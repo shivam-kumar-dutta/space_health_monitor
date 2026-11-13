@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AstroVitals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.5-6 4 12 2.5-6H21"/></svg>
+      </span>
+      <div>
+        <h1>AstroVitals</h1>
+        <p>Onboard crew health monitor. Enter readings, get status, alerts and trends.</p>
+      </div>
+    </div>
+    <div class="mission" id="missionStats"></div>
+  </header>
+
+  <div class="shell">
+    <aside class="rail">
+      <section>
+        <div class="label">Crew</div>
+        <div class="crewlist" id="crewList"></div>
+      </section>
+      <section class="panel">
+        <div class="label">Add crew member</div>
+        <form class="addform" id="addCrew" autocomplete="off">
+          <input type="text" id="newName" placeholder="Name" maxlength="40" aria-label="Crew member name">
+          <input type="text" id="newRole" placeholder="Role (optional)" maxlength="40" aria-label="Crew member role">
+          <button class="btn primary" type="submit">Add to crew</button>
+        </form>
+      </section>
+      <section class="panel tools">
+        <div class="label">Data</div>
+        <button class="btn" data-action="load-example" id="exampleBtn" type="button">Load example crew</button>
+        <button class="btn" data-action="copy-csv" type="button">Copy all readings as CSV</button>
+        <textarea class="csv" id="csvBox" hidden readonly aria-label="CSV export"></textarea>
+        <button class="btn danger" data-action="clear-all" id="clearBtn" type="button">Clear all data</button>
+        <p style="font-size:.74rem;color:var(--muted)">Data is saved on this computer. Nothing is sent to a remote service.</p>
+      </section>
+    </aside>
+
+    <main>
+      <section class="card" id="sumWrap"></section>
+      <div class="work" id="work">
+        <div class="colA">
+          <section class="card" id="findWrap"></section>
+          <section class="card" id="metricWrap"></section>
+        </div>
+        <div class="colB"><section class="card form" id="formWrap"></section></div>
+      </div>
+      <section class="card" id="logWrap"></section>
+      <section class="card nasa-panel" id="nasaDataWrap" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <p class="disclaimer">AstroVitals is a hackathon prototype for decision support. Limits and thresholds are demo values, not validated medical criteria, and nothing here diagnoses or treats a condition. Follow mission medical protocols and contact the flight surgeon for any real concern.</p>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

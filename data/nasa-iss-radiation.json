@@ -1,0 +1,95 @@
+{
+  "title": "ISS DosTel radiation measurements",
+  "data_type": "Environmental radiation measurement; not a crew health/vital-sign record",
+  "source": "NASA Open Science Data Repository (OSDR) RadLab",
+  "source_url": "https://visualization.osdr.nasa.gov/radlab/gui/data-api/",
+  "query_url": "https://visualization.osdr.nasa.gov/radlab/api/?spacecraft=ISS&instrument=DosTel&timestamp%3E=2022-04-01T23%3A00&timestamp%3C2022-04-02T01%3A05&absorbed_dose_rate&format=json",
+  "query_window_utc": "2022-04-01T23:00:00 through 2022-04-02T01:05:00 UTC",
+  "units": "absorbed_dose_rate_ugy_per_hour: µGy/hour",
+  "records": [
+    {
+      "timestamp": "2022-04-01T23:00:00",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 10.2161,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-01T23:10:00",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 2.5185,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-01T23:29:19",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 4.4586,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-01T23:39:39",
+      "instrument": "DosTel1",
+      "absorbed_dose_rate_ugy_per_hour": 11.6586,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-01T23:49:51",
+      "instrument": "DosTel1",
+      "absorbed_dose_rate_ugy_per_hour": 4.1474,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:00:00",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 2.3759,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:10:15",
+      "instrument": "DosTel1",
+      "absorbed_dose_rate_ugy_per_hour": 8.0214,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:22:01",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 10.4338,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:32:14",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 11.5784,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:42:27",
+      "instrument": "DosTel2",
+      "absorbed_dose_rate_ugy_per_hour": 2.6714,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T00:54:27",
+      "instrument": "DosTel1",
+      "absorbed_dose_rate_ugy_per_hour": 2.0398,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    },
+    {
+      "timestamp": "2022-04-02T01:04:40",
+      "instrument": "DosTel1",
+      "absorbed_dose_rate_ugy_per_hour": 6.5721,
+      "dose_equivalent_rate_usv_per_hour": null,
+      "spacecraft": "ISS"
+    }
+  ]
+}
