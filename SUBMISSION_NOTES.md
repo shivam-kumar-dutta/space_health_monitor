@@ -8,7 +8,8 @@
 - **Team:** [Enter the registered team name]
 - **Team members:** [Enter all registered member names]
 - **GitHub repository:** https://github.com/shivam-kumar-dutta/space_health_monitor
-- **Project/demo link:** Run locally at `http://localhost:3000` for the live table demo; add a hosted link only if the team deploys it.
+- **Expected hosted demo:** https://shivam-kumar-dutta.github.io/space_health_monitor/ (confirm the GitHub Pages workflow succeeds and the URL opens before putting it on the submission form).
+- **Laptop demo:** Run locally at `http://localhost:3000` for the live table demo.
 - **Demo video:** [Add link if the submission form requests one]
 
 ## Short description

@@ -188,16 +188,19 @@ let apiSaveQueue = Promise.resolve();
 async function load(){
   // The API is the shared source of truth when this page is served by server.js.
   // Opening index.html directly still works with this browser's local storage.
-  try {
-    const response = await fetch('/api/state');
-    if (!response.ok) throw new Error('API unavailable');
-    const payload = await response.json();
-    if (payload && Array.isArray(payload.crew)) {
-      state = payload;
-      apiConnected = true;
+  // GitHub Pages is a static host: use browser-local storage there instead.
+  if (!location.hostname.endsWith('.github.io')) {
+    try {
+      const response = await fetch('/api/state');
+      if (!response.ok) throw new Error('API unavailable');
+      const payload = await response.json();
+      if (payload && Array.isArray(payload.crew)) {
+        state = payload;
+        apiConnected = true;
+      }
+    } catch (e) {
+      apiConnected = false;
     }
-  } catch (e) {
-    apiConnected = false;
   }
   if (!apiConnected) {
   try {
@@ -443,7 +446,7 @@ async function renderNasaData(){
   if (!wrap) return;
   try {
     if (!nasaRadiationData) {
-      const response = await fetch('/data/nasa-iss-radiation.json');
+      const response = await fetch('data/nasa-iss-radiation.json');
       if (!response.ok) throw new Error('NASA sample data could not be loaded.');
       nasaRadiationData = await response.json();
     }

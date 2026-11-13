@@ -11,6 +11,10 @@ AstroVitals is a NASA Space Apps hackathon prototype for recording crew health r
 
 On Windows, you can also double-click `start-astrovitals.bat`; it opens the server window for you. Keep that window open while using the app. Open the URL in a regular browser on the same computer.
 
+## Hosted demo
+
+The repository includes a GitHub Actions workflow that publishes a static, judge-friendly demo to GitHub Pages whenever `main` changes. Its expected address is `https://shivam-kumar-dutta.github.io/space_health_monitor/`; share it only after the **Publish AstroVitals demo** workflow succeeds and you confirm that address opens. The hosted version saves demo edits in the visitor's browser storage; the Node.js server and its JSON file remain available in the local version described above.
+
 There are no third-party Node packages to install. The first run creates `data/state.json` when a reading is saved. That file is intentionally excluded from the shareable source project so personal/demo readings are not accidentally shared.
 
 To share with teammates, send the project folder or ZIP. Each teammate can run their own local copy. The server listens on this computer's localhost address; it is not a hosted multi-user service.
@@ -22,6 +26,7 @@ To share with teammates, send the project folder or ZIP. Each teammate can run t
 - `modules/dataValidator.js`: checks JSON shape, field types, allowed ranges, duplicate days, and blood-pressure relationships.
 - `modules/healthEngine.js`: calculates reference-range status, personal baselines, simple trends, alerts, and report data.
 - `data/nasa-iss-radiation.json`: timestamped NASA ISS DosTel environmental radiation measurements, displayed separately from crew health readings.
+- `.github/workflows/pages.yml`: builds a small static site from the dashboard files and publishes it to GitHub Pages.
 - `data/state.json`: created on this computer at runtime; not included in the shared source package.
 
 ## Validation rules
@@ -46,6 +51,7 @@ Submission credit: “Data are courtesy of the NASA Open Science Data Repository
 
 - The interface uses Inter, JetBrains Mono, and Space Grotesk from [Google Fonts](https://fonts.google.com/).
 - No third-party Node.js packages are installed; the server uses built-in Node.js modules.
+- GitHub's official Actions (`checkout`, `configure-pages`, `upload-pages-artifact`, `deploy-pages`) publish the static demo.
 - OpenAI Codex assisted with code organization/refactoring, implementation, debugging, NASA data integration, and documentation. The team should review and understand the final work and disclose this AI assistance in the hackathon submission.
 
 ## API routes
