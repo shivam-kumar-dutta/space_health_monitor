@@ -42,6 +42,12 @@ The included snapshot contains 12 actual measurements from NASA OSDR RadLab for 
 
 Submission credit: “Data are courtesy of the NASA Open Science Data Repository (https://osdr.nasa.gov/bio/repo). ISS radiation telemetry accessed through NASA OSDR RadLab.” NASA recommends this general OSDR acknowledgment; cite the specific dataset when one is used. Sources: [NASA RadLab data API](https://visualization.osdr.nasa.gov/radlab/gui/data-api/), [NASA OSDR FAQ and citation guidance](https://science.nasa.gov/reference/osdr-faq/), and [NASA RadLab release notes](https://visualization.osdr.nasa.gov/radlab/gui/knowledgebase/Release_history).
 
+## Other credits and AI-use disclosure
+
+- The interface uses Inter, JetBrains Mono, and Space Grotesk from [Google Fonts](https://fonts.google.com/).
+- No third-party Node.js packages are installed; the server uses built-in Node.js modules.
+- OpenAI Codex assisted with code organization/refactoring, implementation, debugging, NASA data integration, and documentation. The team should review and understand the final work and disclose this AI assistance in the hackathon submission.
+
 ## API routes
 
 All routes use JSON.

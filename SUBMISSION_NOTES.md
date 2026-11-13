@@ -7,7 +7,8 @@
 - **Hackathon:** NASA Space Apps Challenge 2026
 - **Team:** [Enter the registered team name]
 - **Team members:** [Enter all registered member names]
-- **Project/demo link:** [Add after choosing where to host or share the demo]
+- **GitHub repository:** https://github.com/shivam-kumar-dutta/space_health_monitor
+- **Project/demo link:** Run locally at `http://localhost:3000` for the live table demo; add a hosted link only if the team deploys it.
 - **Demo video:** [Add link if the submission form requests one]
 
 ## Short description
@@ -26,6 +27,31 @@ Sources:
 - [NASA OSDR FAQ and dataset citation guidance](https://science.nasa.gov/reference/osdr-faq/)
 - [NASA RadLab release notes](https://visualization.osdr.nasa.gov/radlab/gui/knowledgebase/Release_history)
 - [NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/)
+
+## AI tool disclosure
+
+The event instructions ask teams to mention AI tools used. Suggested truthful disclosure:
+
+> OpenAI Codex was used as an AI coding assistant to help organize and refactor the frontend, implement the Node.js validation and dashboard features, integrate and document NASA OSDR RadLab data, and prepare project documentation. The team is reviewing the implementation and is responsible for understanding, validating, and presenting the final submission.
+
+Keep this disclosure in the submission. Before presenting, have the team review the code and be ready to explain the parts it is claiming as its work. Do not claim the AI-generated portions were written solely by the team.
+
+## Other source credits
+
+- The interface loads **Inter**, **JetBrains Mono**, and **Space Grotesk** from [Google Fonts](https://fonts.google.com/). These are the only externally loaded interface assets identified in the project.
+- No third-party Node.js packages are installed; the server uses built-in Node.js modules.
+- NASA OSDR RadLab is credited above. The seeded crew vital readings are synthetic examples created for demonstration.
+
+## Submission checklist from the event sheet
+
+- Enter the registered team name and every registered team member. The sheet says team membership cannot change after registration.
+- Submit the repository link using the organizer-provided form before its deadline. The linked GitHub repository is currently private; make sure organizers/judges have access before submitting (or ask the organizers whether private links are accepted).
+- Confirm the README explains how to run the project; it currently includes `npm start` and the Windows launcher instructions.
+- Bring the laptop/charger and have a working local demo plus a short presentation ready.
+- Credit NASA data, Google Fonts, and OpenAI Codex in the submission.
+- Explain the synthetic health examples, NASA radiation telemetry, and prototype limitations accurately.
+
+See [PRESENTATION_OUTLINE.md](PRESENTATION_OUTLINE.md) for a short demo talk track.
 
 ## Demo checklist
 
