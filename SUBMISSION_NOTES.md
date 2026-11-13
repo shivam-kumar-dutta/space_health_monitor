@@ -51,6 +51,16 @@ Keep this disclosure in the submission. Before presenting, have the team review 
 - Credit NASA data, Google Fonts, and OpenAI Codex in the submission.
 - Explain the synthetic health examples, NASA radiation telemetry, and prototype limitations accurately.
 
+## On-site event reminders from the attached sheet
+
+- Carry a college/school ID; if unavailable, the sheet says to carry Aadhaar.
+- Bring the laptop, chargers, extension board, and any hardware needed for the demo.
+- Registration starts at 8:30 AM.
+- On November 15, be at the table for pre-final screening from 8:00–10:00 AM.
+- Final judging starts at 12:00 PM; stay at the table and be ready to present.
+- The thank-you and prize-distribution session is listed for 6:00–6:30 PM.
+- The sheet says teams must follow official team-size rules, cannot change members after registration, and should work on one official challenge only.
+
 See [PRESENTATION_OUTLINE.md](PRESENTATION_OUTLINE.md) for a short demo talk track.
 
 ## Demo checklist
