@@ -200,4 +200,23 @@ td.act button{border:0;background:none;color:var(--accent);font-size:.78rem;padd
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}\r\n\r\n
+/* Readiness gauge polish */
+.ring{
+  width:108px;height:108px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle,var(--surface) 57%,color-mix(in srgb,var(--accent-soft) 78%,var(--surface)) 100%);
+  box-shadow:inset 0 1px 8px rgb(20 32 47 / .08),0 4px 14px rgb(20 32 47 / .07);
 }
+.ring::before{
+  content:"";position:absolute;inset:4px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);
+  border-radius:50%;pointer-events:none;
+}
+.ring svg{width:100%;height:100%;padding:4px;overflow:visible}
+.ring .track{stroke-width:8;opacity:.72}
+.ring .arc{stroke-width:8}
+.ring.s0 .arc{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--ok) 42%,transparent))}
+.ring.s1 .arc{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--warn) 42%,transparent))}
+.ring.s2 .arc{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--crit) 42%,transparent))}
+.ring .big{font-size:1.65rem;line-height:1}
+.ring .big small{font-size:.58rem;line-height:1.25;margin-top:4px}
+@media (prefers-reduced-motion:reduce){.ring .arc{filter:none}}
